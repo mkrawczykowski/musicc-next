@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-      <Script type="text/plain" data-cookiecategory="analytics_storage"
+      <Script id="gtm-code" type="text/plain" data-cookiecategory="analytics_storage"
     dangerouslySetInnerHTML={{
       __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
