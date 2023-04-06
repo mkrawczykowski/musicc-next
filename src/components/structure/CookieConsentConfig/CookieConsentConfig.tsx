@@ -1,3 +1,9 @@
+import TagManager from 'react-gtm-module'
+ 
+const tagManagerArgs = {
+    gtmId: 'GTM-T4TSM6F'
+}
+
 /**
  * @type {UserConfig}
  */
@@ -30,7 +36,7 @@ const pluginConfig = {
     },
   
     onAccept: function (cookie) {
-      // ...
+      TagManager.initialize(tagManagerArgs);
     },
   
     onChange: function (cookie, changed_preferences) {
