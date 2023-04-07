@@ -1,4 +1,5 @@
-import TagManager from 'react-gtm-module'
+import TagManager from 'react-gtm-module';
+import Script from 'next/script';
  
 const tagManagerArgs = {
     gtmId: 'GTM-TLT47RQ'
@@ -33,14 +34,22 @@ const pluginConfig = {
       const analyticsEnabled =
         window.CookieConsentApi.allowedCategory('analytics_storage');
       console.log(`analytics ${analyticsEnabled ? 'enabled' : 'disabled'}`);
+      window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              'event' : 'onAccept',
+            })
     },
   
     onAccept: function (cookie) {
       TagManager.initialize(tagManagerArgs);
+      
+        
+            
+
     },
   
     onChange: function (cookie, changed_preferences) {
-      // ...
+      
     },
   
     languages: {
