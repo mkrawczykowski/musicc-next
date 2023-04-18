@@ -50,10 +50,8 @@ const Col = ({children, classes, innerHTML}) => {
         reactifiedClasses += ' ';
     })
     return(
-        <div className={[styles.col, reactifiedClasses].join(' ')} dangerouslySetInnerHTML={innerHTML}>
-            {
-                innerHTML ? null : children
-            }
+        <div className={[styles.col, reactifiedClasses].join(' ')}>
+            {children}
         </div>
     )
 }
