@@ -2,7 +2,10 @@ import react from 'react';
 
 const MainHeader = () => {
     return (
-        <p>head</p>
+        <header>
+           <h1>head</h1>
+        </header>
+        
     )
 }
 
