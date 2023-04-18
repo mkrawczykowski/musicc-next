@@ -1,6 +1,7 @@
 import react from 'react';
 import styles from './MainHeader.module.scss';
 import {Col, Container, Row} from '../Grid/Grid';
+import Logo from '../Logo/Logo';
 
 const MainHeader = () => {
     return (
@@ -8,7 +9,7 @@ const MainHeader = () => {
             <Container>
                 <Row>
                     <Col classes="col-lg-6">
-                        <h1>head</h1>
+                        <Logo/>
                     </Col>
                 </Row>
             </Container>
