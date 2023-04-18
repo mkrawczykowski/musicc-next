@@ -17,7 +17,7 @@ const Row = ({children}) => {
     )
 }
 
-const Col = ({children, classes, innerHTML}) => {
+const Col = ({children, classes}) => {
     const splitClasses = classes.split(' ');
 
         const reactifySplitClass = (classToReactify) => {
@@ -58,7 +58,6 @@ const Col = ({children, classes, innerHTML}) => {
 
 Col.defaultProps = {
     classes: '',
-    innerHTML: ''
 }
 
 export {Container, Row, Col};
