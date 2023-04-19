@@ -18,9 +18,12 @@ const Row = ({children}) => {
 }
 
 const Col = ({children, classes}) => {
+    console.log(classes);
     const splitClasses = classes.split(' ');
+    console.log(splitClasses)
 
         const reactifySplitClass = (classToReactify) => {
+            
             let charPosition = 0;
             let dashPosition = 0;
             let uppercasedClass = '';
@@ -37,18 +40,19 @@ const Col = ({children, classes}) => {
                     uppercasedClass = replaceAt(classToReactify, dashPosition+1, classToReactify[dashPosition+1].toUpperCase());
                     removedDashClass = replaceAt(uppercasedClass, dashPosition, '');
                 }
+
                 charPosition = dashPosition + 1;
                 classToReactify = removedDashClass;
             }
             return styles[removedDashClass];
         }
 
-
     let reactifiedClasses = '';
     splitClasses.map((splitClass) => {
-        reactifiedClasses += reactifySplitClass(splitClass);
+        reactifiedClasses += styles[splitClass];
         reactifiedClasses += ' ';
     })
+    
     return(
         <div className={[styles.col, reactifiedClasses].join(' ')}>
             {children}
