@@ -2,17 +2,10 @@ import React, {createContext, useState} from 'react';
 
 
 const initialState = {
-    activeTab: 0,
-    tabNames: ['Tab 1'],
-    tabsContent: [
-        {
-            graphType: '',
-            graphData: {}
-        }
-    ]
+    activeMenu: true
 };
 
-export const Context = createContext();
+export const Context = createContext({});
 
 const Store = ({children}) => {
     const [state, setState] = useState(initialState);

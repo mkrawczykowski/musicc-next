@@ -1,3 +1,9 @@
-.MainHeader{
-    background-color: antiquewhite;
+@use '../../../styles/global/variables';
+@use 'sass:math';
+@use 'sass:map';
+
+.mainHeader{
+    h1{
+        color: variables.$orange;    
+    }
 }
