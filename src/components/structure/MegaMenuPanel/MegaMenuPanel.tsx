@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MegaMenuPanel = () => {
+const MegaMenuPanel = ({ megaMenuType }) => {
   return (
     <div>MegaMenuPanel</div>
   )
