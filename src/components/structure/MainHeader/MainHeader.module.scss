@@ -2,8 +2,12 @@
 @use 'sass:math';
 @use 'sass:map';
 
-.mainHeader{
-    h1{
-        color: variables.$orange;    
+.mainHeader {
+    h1 {
+        color: variables.$orange;
+    }
+
+    &__structure {
+        display: flex;
     }
 }
