@@ -26,7 +26,6 @@ const MainHeader = () => {
                 </Row>
             </Container>
         </header>
-
     )
 }
 
