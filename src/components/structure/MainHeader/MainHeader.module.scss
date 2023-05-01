@@ -3,11 +3,10 @@
 @use 'sass:map';
 
 .mainHeader {
-    h1 {
-        color: variables.$orange;
-    }
+    // opacity: 0;
+    // visibility: hidden;
 
-    &__structure {
-        display: flex;
+    &__test {
+        background-color: adjust-hue($color: #000000, $degrees: 0);
     }
 }
