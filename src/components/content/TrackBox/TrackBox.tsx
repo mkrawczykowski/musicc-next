@@ -4,7 +4,7 @@ import style from './TrackBox.module.scss';
 const TrackBox = () => {
   return (
     <div className={style.trackBox}>
-      <h3 className={style.trackBox__heading}>Please, don't stop the music</h3>
+      <h3 className={style.trackBox__heading}>Please, dont stop the music</h3>
       <p className={style.trackBox__description}>
         Tutaj będzie krótki opis kawałka, który nie zawsze będzie występował. Dam tutaj ograniczony boksik, czyli mały boks.
       </p>
