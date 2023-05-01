@@ -2,9 +2,7 @@ import React from "react";
 import styles from './MainMenu.module.scss';
 import MainMenuItem from '../MainMenuItem/MainMenuItem';
 
-const MainMenu = ({ onChange }) => {
-
-
+const MainMenu = ({ }) => {
 
   return (
     <ul className={styles.MainMenu}>
