@@ -46,6 +46,7 @@ const Col = ({ children, classes }: ColProps) => {
     return (
         <div className={[styles.col, generateClassesFromProps(classes)].join(' ')}>
             {children}
+
         </div>
     )
 }
