@@ -1,15 +1,16 @@
-import React, {createContext, useState} from 'react';
+import React, { createContext, useState } from 'react';
 
 
 const initialState = {
-    activeMenu: true
+    activeMegaMenu: [1, 2],
+    mobileMenuActive: false
 };
 
 export const Context = createContext({});
 
-const Store = ({children}) => {
+const Store = ({ children }) => {
     const [state, setState] = useState(initialState);
-    return(
+    return (
         <Context.Provider value={[state, setState]}>{children}</Context.Provider>
     )
 }
