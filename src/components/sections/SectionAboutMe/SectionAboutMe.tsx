@@ -7,7 +7,7 @@ const SectionAboutMe = () => {
     <section className={styles.sectionAboutMe}>
       <Container classes={'containerTwoColumns'}>
         <Col>
-          <h2 className={styles.sectionAboutMe__header}>I'm Michael</h2>
+          <h2 className={styles.sectionAboutMe__header}>Im Michael</h2>
         </Col>
         <Col></Col>
       </Container>
