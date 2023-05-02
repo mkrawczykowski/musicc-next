@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 // import MainHeader from '../MainHeader/MainHeader';
-import TracksWithFilters from '@/components/content/TracksWithFilters/TracksWithFilters';
+import SectionTracksWithFilters from '@/components/sections/SectionTracksWithFilters/SectionTracksWithFilters';
 
 const Layout = ({ children }) => {
     return (
@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
             </Head>
             <main>
                 {/* <MainHeader/> */}
-                <TracksWithFilters></TracksWithFilters>
+                <SectionTracksWithFilters></SectionTracksWithFilters>
                 {children}
             </main>
         </>

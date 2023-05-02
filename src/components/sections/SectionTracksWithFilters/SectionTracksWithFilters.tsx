@@ -1,7 +1,7 @@
 import React from "react";
-import styles from './TracksWithFilters.module.scss';
+import styles from './SectionTracksWithFilters.module.scss';
 import { Container, Col } from '../../structure/Grid/Grid';
-import TaxonomyFilterList from '../TaxonomyFilterList/TaxonomyFilterList';
+import TaxonomyFilterList from '../../content/TaxonomyFilterList/TaxonomyFilterList';
 
 const moods = [
   'warm',
@@ -26,12 +26,12 @@ const instruments = [
   'double bass',
 ];
 
-const TracksWithFilters = () => {
+const SectionTracksWithFilters = () => {
   return (
-    <section className={styles.tracksWithFilters}>
+    <section className={styles.sectionTracksWithFilters}>
       <Container classes={'containerTwoColumns'}>
-        <h2 className={styles.tracksWithFilters__sectionHeading}>Free music</h2>
-        <h3 className={styles.tracksWithFilters__sectionSubheading}>(Creative Commons)</h3>
+        <h2 className={styles.sectionTracksWithFilters}>Free music</h2>
+        <h3 className={styles.sectionTracksWithFilters__sectionSubheading}>(Creative Commons)</h3>
         <Col>
           <TaxonomyFilterList title="by mood" taxonomies={moods}></TaxonomyFilterList>
           <TaxonomyFilterList title="by instrument" taxonomies={instruments}></TaxonomyFilterList>
@@ -44,4 +44,4 @@ const TracksWithFilters = () => {
   );
 }
 
-export default TracksWithFilters;
+export default SectionTracksWithFilters;
