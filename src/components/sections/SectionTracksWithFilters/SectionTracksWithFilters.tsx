@@ -37,9 +37,44 @@ const SectionTracksWithFilters = () => {
           <TaxonomyFilterList title="by instrument" taxonomies={instruments}></TaxonomyFilterList>
         </Col>
         <Col>
-          dssddssd
+
+
         </Col>
       </Container>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
     </section>
   );
 }
