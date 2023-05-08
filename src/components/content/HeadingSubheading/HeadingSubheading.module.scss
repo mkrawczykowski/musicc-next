@@ -1,0 +1,24 @@
+@use '../../../styles/global/' as global;
+
+.headingSubheading {
+  &__mainHeading {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4.8rem;
+    line-height: 7.2rem;
+    background: linear-gradient(90.75deg, rgba(255, 0, 168, 0.6) 2.97%, rgba(189, 0, 255, 0.6) 55.95%);
+    background-clip: text;
+    color: rgba(0, 0, 0, 0);
+    text-fill-color: transparent;
+  }
+
+  &__secondaryHeading {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: global.$white;
+  }
+}
