@@ -11,8 +11,8 @@ const HeroPageTitle = () => {
           <HeadingSubheading
             mainHeadingType="h1"
             secondaryHeadingType="h2"
-            mainHeadingString="testing heading"
-            secondaryHeadingString="test string secondary" />
+            mainHeadingString="Free music"
+            secondaryHeadingString="(Creative Commons)" />
         </Col>
       </Container>
     </section>
