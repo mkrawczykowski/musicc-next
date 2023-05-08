@@ -3,6 +3,7 @@ import Head from 'next/head';
 // import MainHeader from '../MainHeader/MainHeader';
 import Footer from '../Footer/Footer';
 import SectionTracksWithFilters from '@/components/sections/SectionTracksWithFilters/SectionTracksWithFilters';
+import HeroPageTitle from '../HeroPageTitle/HeroPageTitle';
 
 const Layout = ({ children }) => {
     return (
@@ -14,6 +15,7 @@ const Layout = ({ children }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
+                <HeroPageTitle />
                 {/* <MainHeader/> */}
                 <SectionTracksWithFilters></SectionTracksWithFilters>
                 {children}

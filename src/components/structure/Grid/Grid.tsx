@@ -2,11 +2,7 @@ import React, { ReactNode } from 'react';
 import styles from './Grid.module.scss';
 
 const generateClassesFromProps = (classes) => {
-    console.log('classes');
-    console.log(classes);
     if (classes) {
-        console.log('classes 2')
-        console.log(classes)
         const splitClassesArray = classes.split(' ');
         let splitClassesString = '';
 
