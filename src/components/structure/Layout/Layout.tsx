@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 // import MainHeader from '../MainHeader/MainHeader';
+import Footer from '../Footer/Footer';
 import SectionTracksWithFilters from '@/components/sections/SectionTracksWithFilters/SectionTracksWithFilters';
 
 const Layout = ({ children }) => {
@@ -17,6 +18,7 @@ const Layout = ({ children }) => {
                 <SectionTracksWithFilters></SectionTracksWithFilters>
                 {children}
             </main>
+            <Footer></Footer>
         </>
     )
 }

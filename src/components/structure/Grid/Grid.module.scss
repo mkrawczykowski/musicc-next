@@ -1,4 +1,4 @@
-@use '../../../styles/global/variables';
+@use '../../../styles/global/' as global;
 @use 'sass:math';
 @use 'sass:map';
 
@@ -27,10 +27,14 @@ $columns: (
 
 .container {
   max-width: 121.6rem;
-  padding: 0 2rem;
+  padding: 0 3rem;
   margin: 0 auto;
   display: grid;
   column-gap: 2rem;
+
+  @include global.media-up(xl) {
+    padding: 0 2rem;
+  }
 
   &TwoColumns {
     grid-template-columns: 21.9rem 93.7rem;
