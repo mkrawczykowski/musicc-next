@@ -7,7 +7,7 @@ const MegaMenuTypeOne = ({ subMenuData }) => {
     <div className={styles.MegaMenuTypeOne__background}>
       <div className={styles.MegaMenuTypeOne__columns}>
         <div className={styles.MegaMenuTypeOne__columnNarrow}>
-          <MenuWidgetList data={subMenuData[0]} />
+          <MenuWidgetList data={subMenuData.moods} />
         </div>
         <div className={styles.MegaMenuTypeOne__columnNarrow}>
           <h3>by instrument</h3>
