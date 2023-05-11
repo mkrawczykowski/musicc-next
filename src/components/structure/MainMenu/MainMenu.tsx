@@ -38,9 +38,30 @@ const MainMenu = ({ }) => {
     instruments:
     {
       widgetType: 'list',
-      widgetData: ['synth', 'piano', 'drums', 'bass', 'double bass'],
-      widgetHeading: 'by mood',
-      widgetLinkLabel: 'see all moods',
+      widgetData: [
+        {
+          label: 'synth',
+          url: '#'
+        },
+        {
+          label: 'piano',
+          url: '#'
+        },
+        {
+          label: 'drums',
+          url: '#'
+        },
+        {
+          label: 'bass',
+          url: '#'
+        },
+        {
+          label: 'double bass',
+          url: '#'
+        }
+      ],
+      widgetHeading: 'by instrument',
+      widgetLinkLabel: 'see all instruments',
       widgetLinkUrl: '#'
     },
     mostPopular:

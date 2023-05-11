@@ -10,35 +10,7 @@ const MegaMenuTypeOne = ({ subMenuData }) => {
           <MenuWidgetList data={subMenuData.moods} />
         </div>
         <div className={styles.MegaMenuTypeOne__columnNarrow}>
-          <h3>by instrument</h3>
-          <ul className={styles.MegaMenuTypeOne__heading}>
-            <li className={styles.MegaMenuTypeOne__item}>
-              <a className={styles.MegaMenuTypeOne__itemLink} href="">
-                synth
-              </a>
-            </li>
-            <li className={styles.MegaMenuTypeOne__item}>
-              <a className={styles.MegaMenuTypeOne__itemLink} href="">
-                piano
-              </a>
-            </li>
-            <li className={styles.MegaMenuTypeOne__item}>
-              <a className={styles.MegaMenuTypeOne__itemLink} href="">
-                drums
-              </a>
-            </li>
-            <li className={styles.MegaMenuTypeOne__item}>
-              <a className={styles.MegaMenuTypeOne__itemLink} href="">
-                bass
-              </a>
-            </li>
-            <li className={styles.MegaMenuTypeOne__item}>
-              <a className={styles.MegaMenuTypeOne__itemLink} href="">
-                double  bass
-              </a>
-            </li>
-          </ul>
-          <a href="" className={styles.MegaMenuTypeOne__linkAll}>see all instruments</a>
+          <MenuWidgetList data={subMenuData.instruments} />
         </div>
         <div className={styles.MegaMenuTypeOne__columnWide}>
           <h3 className={styles.MegaMenuTypeOne__heading}>most popular tracks</h3>
