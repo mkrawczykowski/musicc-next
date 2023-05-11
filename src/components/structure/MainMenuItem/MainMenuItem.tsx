@@ -14,7 +14,8 @@ const MainMenuItem = ({ label, url, subMenuData }: MainMenuItemProps) => {
       <Link href={url}>
         {label}
       </Link>
-      <MegaMenuPanel megaMenuType='mega_menu_1' subMenuData={subMenuData} />
+      {subMenuData ? <MegaMenuPanel megaMenuType='mega_menu_1' subMenuData={subMenuData} /> : null}
+
     </li>
   )
 }

@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Footer from '../Footer/Footer';
 import SectionTracksWithFilters from '@/components/sections/SectionTracksWithFilters/SectionTracksWithFilters';
 import HeroPageTitle from '../HeroPageTitle/HeroPageTitle';
+import MainHeader from '../MainHeader/MainHeader';
 
 const Layout = ({ children }) => {
     return (
@@ -16,7 +17,7 @@ const Layout = ({ children }) => {
             </Head>
             <main>
                 <HeroPageTitle />
-                {/* <MainHeader/> */}
+                <MainHeader />
                 <SectionTracksWithFilters></SectionTracksWithFilters>
                 {children}
             </main>

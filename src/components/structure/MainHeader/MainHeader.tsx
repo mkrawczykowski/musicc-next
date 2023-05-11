@@ -7,7 +7,8 @@ import MainMenu from '../MainMenu/MainMenu';
 import Context from '../Store/Store';
 
 const MainHeader = () => {
-    return (<></>
+    return (
+        <MainMenu />
         // <div className={styles.mainHeader}>
         //     <Container>
         //         <Row>

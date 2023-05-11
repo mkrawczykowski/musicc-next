@@ -1,40 +1,13 @@
 import React from 'react';
 import styles from './MegaMenuTypeOne.module.scss';
+import MenuWidgetList from '../MenuWidgetList/MenuWidgetList';
 
-const MegaMenuTypeOne = () => {
+const MegaMenuTypeOne = ({ subMenuData }) => {
   return (
     <div className={styles.MegaMenuTypeOne__background}>
       <div className={styles.MegaMenuTypeOne__columns}>
         <div className={styles.MegaMenuTypeOne__columnNarrow}>
-          <h3 className={styles.MegaMenuTypeOne__heading}>by mood</h3>
-          <ul className={styles.MegaMenuTypeOne__heading}>
-            <li className={styles.MegaMenuTypeOne__item}>
-              <a className={styles.MegaMenuTypeOne__itemLink} href="">
-                warm
-              </a>
-            </li>
-            <li className={styles.MegaMenuTypeOne__item}>
-              <a className={styles.MegaMenuTypeOne__itemLink} href="">
-                cold
-              </a>
-            </li>
-            <li className={styles.MegaMenuTypeOne__item}>
-              <a className={styles.MegaMenuTypeOne__itemLink} href="">
-                mysterious
-              </a>
-            </li>
-            <li className={styles.MegaMenuTypeOne__item}>
-              <a className={styles.MegaMenuTypeOne__itemLink} href="">
-                emotional
-              </a>
-            </li>
-            <li className={styles.MegaMenuTypeOne__item}>
-              <a className={styles.MegaMenuTypeOne__itemLink} href="">
-                happy
-              </a>
-            </li>
-          </ul>
-          <a href="" className={styles.MegaMenuTypeOne__linkAll}>see all moods</a>
+          <MenuWidgetList data={subMenuData[0]} />
         </div>
         <div className={styles.MegaMenuTypeOne__columnNarrow}>
           <h3>by instrument</h3>

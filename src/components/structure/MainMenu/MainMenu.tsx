@@ -4,13 +4,32 @@ import MainMenuItem from '../MainMenuItem/MainMenuItem';
 
 const MainMenu = ({ }) => {
 
-  const subMenuData =
-  {
-    megaMenuType: 'mega_menu_1',
-    widgetsData: [
+  const megaMenu1 =
+    [
       {
         widgetType: 'list',
-        widgetData: ['warm', 'cold', 'mysterious', 'emotional', 'happy'],
+        widgetData: [
+          {
+            label: 'warm',
+            url: '#',
+          },
+          {
+            label: 'cold',
+            url: '#',
+          },
+          {
+            label: 'mysterious',
+            url: '#',
+          },
+          {
+            label: 'emotional',
+            url: '#',
+          },
+          {
+            label: 'happy',
+            url: '#',
+          }
+        ],
         widgetHeading: 'by mood',
         widgetLinkLabel: 'see all moods',
         widgetLinkUrl: '#'
@@ -37,11 +56,10 @@ const MainMenu = ({ }) => {
         widgetLinkUrl: '#'
       },
     ]
-  }
 
   return (
     <ul className={styles.MainMenu}>
-      <MainMenuItem label="free music" url="/" subMenuData={subMenuData} />
+      <MainMenuItem label="free music" url="/" subMenuData={megaMenu1} />
       <MainMenuItem label="Creative Commons 4.0 license" url="/" />
       <MainMenuItem label="About the author" url="/" />
       <MainMenuItem label="Contact the author" url="/" />
