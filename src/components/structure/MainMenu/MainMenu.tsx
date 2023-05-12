@@ -72,11 +72,11 @@ const MainMenu = ({ }) => {
       widgetLinkLabel: 'see all tracks',
       widgetLinkUrl: '#'
     },
-    fearured:
+    featured:
     {
       widgetType: 'simple',
       widgetData: ['tracks I like the most'],
-      widgetHeading: 'FEATURED TRACKS - TRACKS I LIKE THE MOST',
+      widgetHeading: 'Featured tracks - tracks I like the most',
       widgetLinkLabel: 'see all tracks',
       widgetLinkUrl: '#'
     },
