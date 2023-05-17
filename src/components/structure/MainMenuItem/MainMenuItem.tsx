@@ -10,13 +10,19 @@ interface MainMenuItemProps {
 
 const MainMenuItem = ({ label, url, subMenuData }: MainMenuItemProps) => {
   const ref = useRef(null);
-  const handleLinkClick = (event) => {
+  const classes = subMenuData ? 'hasSubMenu' : undefined;
+  const handleLinkClick = () => {
+    console.log('ref.current')
     console.log(ref.current)
+    console.log(ref)
+    if (ref.current.classList.contains('hasSubMenu')) {
+      ref.current.classList.toggle('active');
+    }
   }
   return (
     <li>
       <Link href={url} legacyBehavior>
-        <a href="" ref={ref} onClick={handleLinkClick}>{label}</a>
+        <a href="" ref={ref} onClick={handleLinkClick} className={classes}>{label}</a>
       </Link>
       {subMenuData ? <MegaMenuPanel megaMenuType='mega_menu_1' subMenuData={subMenuData} /> : null}
     </li>
