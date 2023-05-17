@@ -9,15 +9,18 @@ interface MainMenuItemProps {
 }
 
 const MainMenuItem = ({ label, url, subMenuData }: MainMenuItemProps) => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLAnchorElement>(null);
   const classes = subMenuData ? 'hasSubMenu' : undefined;
   const handleLinkClick = () => {
     console.log('ref.current')
     console.log(ref.current)
     console.log(ref)
-    if (ref.current.classList.contains('hasSubMenu')) {
-      ref.current.classList.toggle('active');
+    if (ref.current) {
+      if (ref.current.classList.contains('hasSubMenu')) {
+        ref.current.classList.toggle('active');
+      }
     }
+
   }
   return (
     <li>
