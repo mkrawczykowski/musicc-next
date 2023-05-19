@@ -16,8 +16,8 @@ const Layout = ({ children }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <HeroPageTitle />
                 <MainHeader />
+                <HeroPageTitle />
                 <SectionTracksWithFilters></SectionTracksWithFilters>
                 {children}
             </main>
