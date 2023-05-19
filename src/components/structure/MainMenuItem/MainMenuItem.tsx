@@ -5,7 +5,7 @@ interface MainMenuItemProps {
   label: string,
   url: string,
   subMenuData?: any,
-  hasChildren: boolean,
+  hasChildren?: boolean,
 }
 
 const MainMenuItem = ({ label, url, subMenuData }: MainMenuItemProps) => {
