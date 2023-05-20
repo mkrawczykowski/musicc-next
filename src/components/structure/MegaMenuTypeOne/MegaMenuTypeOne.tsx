@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './MegaMenuTypeOne.module.scss';
 import MenuWidgetList from '../MenuWidgetList/MenuWidgetList';
+import MenuWidgetSimple from '../MenuWidgetList/MenuWidgetList';
 
 const MegaMenuTypeOne = ({ subMenuData }) => {
   return (
@@ -13,8 +14,8 @@ const MegaMenuTypeOne = ({ subMenuData }) => {
           <MenuWidgetList data={subMenuData.instruments} />
         </div>
         <div className={styles.MegaMenuTypeOne__columnWide}>
-          <MenuWidgetList data={subMenuData.mostPopular} />
-          <MenuWidgetList data={subMenuData.featured} />
+          <MenuWidgetSimple data={subMenuData.mostPopular} />
+          <MenuWidgetSimple data={subMenuData.featured} />
         </div>
       </div>
     </div>

@@ -18,7 +18,6 @@ const MainMenuItem = ({ label, url, subMenuData }: MainMenuItemProps) => {
         ref.current.classList.toggle('active');
       }
     }
-
   }
   return (
     <li>
